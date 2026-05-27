@@ -8,6 +8,7 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score, confusion_matrix
 import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
+import os
 
 # --- Page Config ---
 st.set_page_config(page_title="Student CGPA Dashboard", layout="wide")
