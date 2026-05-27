@@ -23,7 +23,15 @@ As data analysts, our goal is to uncover whether spending too much time on our p
 @st.cache_data
 def load_and_clean_data():
     #df = pd.read_excel('FinalDataset.xlsx', sheet_name='Sheet1')
-    df = pd.read_excel('SyntheticDataset.xlsx', sheet_name='Sheet1')
+    #df = pd.read_excel('SyntheticDataset.xlsx', sheet_name='Sheet1')
+    # Get the directory that this specific script file is in
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Build the absolute path to your Excel file dynamically
+    file_path = os.path.join(current_dir, 'SyntheticDataset.xlsx')
+
+    # Load dataset safely
+    df = pd.read_excel(file_path, sheet_name='Sheet1')
     
     cols_to_drop = ['screen_shot', 'hour (h)', 'minnutes (m)']
     df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
