@@ -16,7 +16,7 @@ Built as a **128-352 Data Science Term Project** at Siam University (Team No. 4)
 
 ## 🚀 Live Demo
 
-> 🔗 **[Launch the Interactive Dashboard](#)** 
+> 🔗 **[Launch the Interactive Dashboard](https://screentime-vs-gpagit-bqedtmztprmkcpgcj6dcxc.streamlit.app/)** 
 
 The dashboard is built with Streamlit and lets you explore every finding interactively — filter by demographic, drill into charts, and follow the story section by section.
 
@@ -84,7 +84,7 @@ The dashboard is built with Streamlit and lets you explore every finding interac
 
 ```bash
 # 1. Clone the repository
-git clone 
+git clone https://github.com/EaintMM/Screentime-vs-GPA.git
 cd Screentime-vs-GPA
 
 # 2. Install dependencies
